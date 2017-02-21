@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  DWQSelectAttributes
+//
+//  Created by 杜文全 on 15/5/21.
+//  Copyright © 2015年 com.sdzw.duwenquan. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+DWQExtension.h"
+
+#define FONT(s)       [UIFont systemFontOfSize:s]
+#define screen_Width [UIScreen mainScreen].bounds.size.width
+#define screen_Height [UIScreen mainScreen].bounds.size.height
+
+#define BackgroundColor [UIColor colorWithRed:240/255.0f green:240/255.0f blue:244/255.0f alpha:1]
+#define SelectColor        [UIColor colorWithRed:60/255.0f green:0/255.0f blue:132/255.0f alpha:1]
+
+
+
+#endif /* PrefixHeader_pch */
