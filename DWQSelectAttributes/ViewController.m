@@ -31,12 +31,22 @@
     
     self.backgroundView = [[UIView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:self.backgroundView];
+
+    UIImageView *logo=[[UIImageView alloc]initWithFrame:CGRectMake(80, 80, screen_Width-160, 150)];
+    logo.image=[UIImage imageNamed:@"DWQ-LOGO.jpeg"];
     
-    UIImageView *backgroundImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, screen_Width, screen_Height)];
+    [self.view addSubview:logo];
     
-    backgroundImage.image = [UIImage imageNamed:@"star"];
-    //    backgroundImage.contentMode = UIViewContentModeScaleAspectFit;
-    [self.backgroundView addSubview:backgroundImage];
+    
+    UILabel *JS=[[UILabel alloc]initWithFrame:CGRectMake(40, 260, screen_Width-40, 20)];
+    JS.text=@"简  书：iOS攻城狮DWQ";
+    JS.textColor=[UIColor redColor];
+    [self.view addSubview:JS];
+    
+    UILabel *GitHub=[[UILabel alloc]initWithFrame:CGRectMake(40, 300, screen_Width-40, 20)];
+    GitHub.textColor=[UIColor blueColor];
+    GitHub.text=@"Github: DevelopmentEngineer-DWQ";
+    [self.view addSubview:GitHub];
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(0, screen_Height-40, screen_Width, 40);
@@ -44,7 +54,7 @@
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     btn.backgroundColor = [UIColor colorWithRed:245 green:56 blue:64 alpha:1];
     [btn addTarget:self action:@selector(chooseViewClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.backgroundView addSubview:btn];
+    [self.view addSubview:btn];
     
     
     self.standardList = @[@"颜色",@"尺寸"];
@@ -55,10 +65,10 @@
 -(void)initSelectView{
     
     self.selectView = [[DWQSelectView alloc] initWithFrame:CGRectMake(0, screen_Height, screen_Width, screen_Height)];
-    self.selectView.headImage.image = [UIImage imageNamed:@"bingli"];
+    self.selectView.headImage.image = [UIImage imageNamed:@"凯迪拉克.jpg"];
     self.selectView.LB_price.text = @"￥121.00";
     self.selectView.LB_stock.text = [NSString stringWithFormat:@"库存%@件",@999];
-    self.selectView.LB_showSales.text=@"已销售50件";
+    self.selectView.LB_showSales.text=@"已销售40件";
     self.selectView.LB_detail.text = @"请选择规格属性";
     [self.view addSubview:self.selectView];
     
@@ -93,10 +103,10 @@
 -(void)addGoodsCartBtnClick{
     
     
-    NSLog(@"加入购物车成功");
+    NSLog(@"立即购买成功");
 }
 
-#pragma mark --立即购买
+#pragma mark --弹出规格属性
 -(void)chooseViewClick{
     NSLog(@"--------");
     

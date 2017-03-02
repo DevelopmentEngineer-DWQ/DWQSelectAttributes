@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0429AE421E67B788007378EE /* 取消.png in Resources */ = {isa = PBXBuildFile; fileRef = 0429AE411E67B788007378EE /* 取消.png */; };
+		0429AE441E67B80A007378EE /* 凯迪拉克.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0429AE431E67B80A007378EE /* 凯迪拉克.jpg */; };
+		0429AE461E67BBA1007378EE /* DWQ-LOGO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0429AE451E67BBA1007378EE /* DWQ-LOGO.jpeg */; };
 		04F72BD91E5C300B00B8BAAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F72BD81E5C300B00B8BAAF /* main.m */; };
 		04F72BDC1E5C300B00B8BAAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F72BDB1E5C300B00B8BAAF /* AppDelegate.m */; };
 		04F72BDF1E5C300B00B8BAAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F72BDE1E5C300B00B8BAAF /* ViewController.m */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0429AE411E67B788007378EE /* 取消.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "取消.png"; sourceTree = "<group>"; };
+		0429AE431E67B80A007378EE /* 凯迪拉克.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "凯迪拉克.jpg"; sourceTree = "<group>"; };
+		0429AE451E67BBA1007378EE /* DWQ-LOGO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DWQ-LOGO.jpeg"; sourceTree = "<group>"; };
 		04F72BD41E5C300B00B8BAAF /* DWQSelectAttributes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DWQSelectAttributes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F72BD81E5C300B00B8BAAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04F72BDA1E5C300B00B8BAAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -165,6 +171,9 @@
 		04F72C0B1E5C306300B8BAAF /* DWQSelectAttributesView */ = {
 			isa = PBXGroup;
 			children = (
+				0429AE451E67BBA1007378EE /* DWQ-LOGO.jpeg */,
+				0429AE431E67B80A007378EE /* 凯迪拉克.jpg */,
+				0429AE411E67B788007378EE /* 取消.png */,
 				04F72C0F1E5C318800B8BAAF /* DWQSelectAttributes.h */,
 				04F72C101E5C318800B8BAAF /* DWQSelectAttributes.m */,
 				04F72C131E5C32E500B8BAAF /* DWQSelectView.h */,
@@ -284,7 +293,10 @@
 			files = (
 				04F72BE71E5C300B00B8BAAF /* LaunchScreen.storyboard in Resources */,
 				04F72BE41E5C300B00B8BAAF /* Assets.xcassets in Resources */,
+				0429AE441E67B80A007378EE /* 凯迪拉克.jpg in Resources */,
+				0429AE461E67BBA1007378EE /* DWQ-LOGO.jpeg in Resources */,
 				04F72BE21E5C300B00B8BAAF /* Main.storyboard in Resources */,
+				0429AE421E67B788007378EE /* 取消.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +564,7 @@
 				04F72C031E5C300B00B8BAAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04F72C041E5C300B00B8BAAF /* Build configuration list for PBXNativeTarget "DWQSelectAttributesTests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +573,7 @@
 				04F72C061E5C300B00B8BAAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04F72C071E5C300B00B8BAAF /* Build configuration list for PBXNativeTarget "DWQSelectAttributesUITests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +582,7 @@
 				04F72C091E5C300B00B8BAAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

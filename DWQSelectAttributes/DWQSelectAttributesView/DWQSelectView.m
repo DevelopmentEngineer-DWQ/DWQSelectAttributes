@@ -49,7 +49,7 @@
     
     //商品图片
     headImage = [[UIImageView alloc] initWithFrame:CGRectMake(20, 0, 90, 90)];
-    headImage.image = [UIImage imageNamed:@"product_04"];
+    headImage.image = [UIImage imageNamed:@"凯迪拉克.jpg"];
     headImage.layer.cornerRadius = 4;
     headImage.layer.borderColor = [UIColor lightGrayColor].CGColor;
     headImage.layer.borderWidth = 1;
@@ -58,7 +58,7 @@
     
     cancelBtn= [UIButton buttonWithType:UIButtonTypeCustom];
     cancelBtn.frame = CGRectMake(screen_Width-40, 10, 25, 25);
-    [cancelBtn setBackgroundImage:[UIImage imageNamed:@"close"] forState:0];
+    [cancelBtn setBackgroundImage:[UIImage imageNamed:@"取消"] forState:0];
     [whiteView addSubview:cancelBtn];
     
     
